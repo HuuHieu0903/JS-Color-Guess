@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Guess Game</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="./correct.svg" type="image/x-icon" />
+        <meta
+            property="og:image"
+            content="https://www.101computing.net/wp/wp-content/uploads/rgb-colours.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+    </head>
+    <body>
+        <div class="container">
+            <button id="start" class="button">Start</button>
+            <div class="main">
+                <div class="time-left">
+                    <h1>Color Guessing Game</h1>
+                    <p>Time Left: <span class="timing"></span></p>
+                </div>
+                <div class="color">RGB(255, 255, 255)</div>
+                <div class="list-box">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="number-questions">
+                    <div class="number-of-questions"></div>
+                    <button id="next" class="button">Next</button>
+                </div>
+            </div>
+            <div class="score">
+                <p class="user-score"></p>
+                <button id="restart" class="button">Restart</button>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

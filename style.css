@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #9873fe;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    box-shadow: 0 1em 3em rgba(37, 22, 80, 0.3);
+    padding: 15px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#start,
+.score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1em 3em rgba(37, 22, 80, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.time-left {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.time-left h1 {
+    font-size: 24px;
+}
+
+.color {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.list-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(50% - 20px);
+    height: 130px;
+    background-color: red;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box.clicked {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.box.correct {
+    background-image: url(./correct.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box.incorrect {
+    background-image: url(./incorrect.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.number-questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+#next {
+    background-color: #9873fe;
+    color: #fff;
+}
+
+.user-score {
+    margin-bottom: 15px;
+}
+
+.score,
+.main {
+    display: none;
+}
